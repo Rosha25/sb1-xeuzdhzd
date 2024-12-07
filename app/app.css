@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.action-bar {
+  background-color: #2563eb;
+  color: white;
+}
+
+.service-card {
+  border-radius: 8;
+  background-color: white;
+  elevation: 2;
+  margin: 8;
+}
+
+.primary-button {
+  background-color: #2563eb;
+  color: white;
+  padding: 12;
+  border-radius: 6;
+  font-weight: bold;
+}
+
+.service-icon {
+  font-family: "MaterialIcons-Regular";
+  font-size: 24;
+}

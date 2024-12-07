@@ -1,0 +1,15 @@
+<StackLayout class="p-4">
+    <Label text="Available Services" class="text-2xl font-bold mb-4"/>
+    <ListView items="{{ services }}" class="list-group">
+        <ListView.itemTemplate>
+            <GridLayout columns="auto,*,auto" class="p-2 border-b border-gray-200">
+                <Image src="{{ icon }}" width="40" height="40" class="mr-2"/>
+                <StackLayout col="1">
+                    <Label text="{{ name }}" class="font-semibold"/>
+                    <Label text="{{ description }}" class="text-gray-600"/>
+                </StackLayout>
+                <Label text="{{ '₹' + price }}" col="2" class="text-right"/>
+            </GridLayout>
+        </ListView.itemTemplate>
+    </ListView>
+</StackLayout>

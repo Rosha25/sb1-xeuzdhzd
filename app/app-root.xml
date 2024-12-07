@@ -1,0 +1,10 @@
+<Frame defaultPage="main-page">
+    <Frame.actionBar>
+        <ActionBar title="SEYVA">
+            <NavigationButton visibility="collapsed"/>
+            <ActionBar.actionItems>
+                <ActionItem ios.position="right" android.position="right" text="Profile"/>
+            </ActionBar.actionItems>
+        </ActionBar>
+    </Frame.actionBar>
+</Frame>

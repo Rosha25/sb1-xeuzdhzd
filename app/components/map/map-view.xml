@@ -1,0 +1,20 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd"
+      xmlns:maps="@nativescript/google-maps">
+    <GridLayout>
+        <maps:GoogleMaps
+            latitude="{{ userLocation.latitude }}"
+            longitude="{{ userLocation.longitude }}"
+            zoom="15"
+            bearing="0"
+            tilt="0"
+            padding="0"
+            mapAnimationsEnabled="true">
+            <maps:GoogleMaps.marker
+                latitude="{{ userLocation.latitude }}"
+                longitude="{{ userLocation.longitude }}"
+                title="You are here"
+                snippet="Current location"
+                icon="res://toolkit_marker"/>
+        </maps:GoogleMaps>
+    </GridLayout>
+</Page>
